@@ -4,7 +4,7 @@
       "Felipe da Veiga Leprevost <leprevost@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 7.02, CPAN::Meta::Converter version 2.142690",
+   "generated_by" : "ExtUtils::MakeMaker version 7, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -50,5 +50,5 @@
          "url" : "https://github.com/Leprevost/Bio-KEGG-API"
       }
    },
-   "version" : "0.01"
+   "version" : "0.011"
 }

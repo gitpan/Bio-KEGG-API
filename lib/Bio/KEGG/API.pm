@@ -8,7 +8,7 @@ use namespace::autoclean;
 use REST::Client;
 use Net::FTP::Tiny qw(ftp_get);
 
-our $VERSION = '0.01';
+our $VERSION = '0.011';
 
 has 'client' => (
 		is	=>	'rw',

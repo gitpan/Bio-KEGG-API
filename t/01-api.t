@@ -11,9 +11,12 @@ plan tests => 1;
 my $k = Bio::KEGG::API->new();
 
 my $result = $k->database_info(database => 'hsa');
-$result =~ s/\s+/ /g;
-chop $result;
+my $got = 0;
 
-my $text = "T01001 Homo sapiens (human) KEGG Genes Database hsa Release 72.0+/11-14, Nov 14 Kanehisa Laboratories 30,790 entries";
+if ( $result =~ m/^T01001/ ) {
+	
+	$got = 1;
 
-cmp_ok ( $result, 'eq', $text);
+}
+
+ok($got == 1, "api test");
